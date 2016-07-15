@@ -1,0 +1,4 @@
+<button ui-sref="bleetNew">[+]New![+]</button>
+<div data-ng-repeat="bleet in BleetIndexViewModel.bleets | orderBy: '-created_at'">
+  <p><a ui-sref="bleetShow({id: bleet.id})">{{bleet.content}}</a> | <a ui-sref="bleetEdit({id: bleet.id})"> Edit </a></p>
+</div>

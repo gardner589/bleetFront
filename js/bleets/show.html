@@ -1,0 +1,6 @@
+<h3 style="cursor:pointer;" ui-sref="bleetIndex()">All</h3>
+<br>
+<p>{{BleetShowViewModel.bleet.content}}</p>
+<p><strong>Created</strong> : {{BleetShowViewModel.bleet.created_at | date: 'MMM d, yyyy hh:mm a'}}</p>
+
+<button ng-click="BleetShowViewModel.destroy(bleet)">Delete Bleet</button>
